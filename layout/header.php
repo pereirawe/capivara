@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="shortcut icon" href="https://capivara.insoca.com.br/favicon.ico" />
+	<link rel="shortcut icon" href="<?php echo $app_url ; ?>/favicon.ico" />
 	<title>Capivara</title>
 	<meta http-equiv="cache-control" content="max-age=0" />
 	<meta http-equiv="cache-control" content="no-cache" />
@@ -52,7 +52,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-127025101-1');
+  gtag('config', '');
 </script>
 
 </head>

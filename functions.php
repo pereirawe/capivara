@@ -1,23 +1,6 @@
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" > </script>
 <?php
-    session_start();
-    ini_set("session.gc_maxlifetime", 315360000);
-    ini_set("session.cookie_lifetime", 315360000);
-    session_set_cookie_params(315360000);
-    ini_set('display_errors', '1');
-    ini_set('display_errors',1);
-    error_reporting(E_ALL);
-    header("Cache-Control: no-cache, must-revalidate");
-    header("Expires: Sat, 1 Jul 2000 05:00:00 GMT");
-    setlocale(LC_ALL,"es_CO");
-    setlocale(LC_MONETARY, 'es_CO');
-    // echo ini_get('upload_max_filesize');
-    // echo ini_get('post_max_size');
-    //echo ini_get('disable_functions');
-    $time_stamp = time();
-    $actual_url = "https://". $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'] ;
-    //echo $actual_url;
-
+    include_once('./config/config.php');
+    /*
     if(!isset($_SESSION['user_id'])){
         if (!isset($_SESSION['call_back_url'])) {
             if($actual_url != "https://capivara.insoca.com.br/register.php" &&
@@ -29,7 +12,6 @@
                     $_SESSION['call_back_url'] = $actual_url;
                     $_SESSION['call_back_do'] = "true";
                     // echo $actual_url; die;
-
             }
         }
     }
@@ -37,6 +19,7 @@
     if(isset($_SESSION['call_back_url'])){
         // echo $_SESSION['call_back_url'] . " - ". $_SESSION['call_back_do'];
     }
+    */
 
     function el_header() {
         global  $header_action;
@@ -1064,4 +1047,5 @@
             echo '<button onclick="see_more_post();">Ver más...</button>';
         }
     }
+    // <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" > </script>
 ?>
