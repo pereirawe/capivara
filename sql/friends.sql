@@ -1,0 +1,6 @@
+id
+friends_relation_id
+users_id_a
+users_id_b
+friends_request_date
+friends_answer_date

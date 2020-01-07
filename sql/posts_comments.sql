@@ -1,0 +1,7 @@
+id
+user_id
+post_id
+comment_id
+comment_date
+comment_content
+comment_attachtment
