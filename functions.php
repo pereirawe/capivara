@@ -64,8 +64,10 @@
     }
 
     // BASE DE DATOS
+    /*
     require_once("database.php");
-    mysqli_query ($linkli,"SET NAMES 'utf8'") or die;
+    mysqli_query ($linkli,"SET NAMES 'utf8'") or die;*/
+    
 
     // SEGURIDAD DE SESION
     function secure_session(){
