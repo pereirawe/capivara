@@ -1,4 +1,8 @@
+
+Hola
 <?php
+    
+    die;
     include './functions.php';
     if (isset($_SESSION["user_email"])) {
         echo '<script>
